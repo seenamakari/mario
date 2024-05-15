@@ -9,6 +9,16 @@ kaboom({
 })
 
 
+// Speed identifiers
+let isJumping = true
+const MOVE_SPEED = 120
+const JUMP_FORCE = 360
+const BIG_JUMP_FORCE = 550
+let CURRENT_JUMP_FORCE = JUMP_FORCE
+const FALL_DEATH = 400
+const ENEMY_SPEED = 20
+
+
 // Game logic
 
 loadRoot('https://i.imgur.com/')
@@ -31,17 +41,6 @@ loadSprite('blue-steel', 'gqVoI2b.png')
 loadSprite('blue-evil-shroom', 'SvV4ueD.png')
 loadSprite('blue-surprise', 'RMqCc1G.png')
 
-
-
-
-// Speed identifiers
-let isJumping = true
-const MOVE_SPEED = 120
-const JUMP_FORCE = 360
-const BIG_JUMP_FORCE = 550
-let CURRENT_JUMP_FORCE = JUMP_FORCE
-const FALL_DEATH = 400
-const ENEMY_SPEED = 20
 
 
 scene("game", ({ level, score }) => {
