@@ -13,8 +13,8 @@ kaboom({
 
 // Speed identifiers
 let isJumping = true
-const MOVE_SPEED = 500
-const JUMP_FORCE = 1600
+const MOVE_SPEED = 300
+const JUMP_FORCE = 400
 const BIG_JUMP_FORCE = 1000
 let CURRENT_JUMP_FORCE = JUMP_FORCE
 const FALL_DEATH = 400
@@ -71,6 +71,18 @@ scene("game", ({ level, score }) => {
       '£                          x x x        £',
       '£                        x x x x  x   -+£',
       '£               z   z  x x x x x  x   ()£',
+      '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
+    ],
+    [
+      '£                                       £',
+      '£                                       £',
+      '£                                       £',
+      '£                                       £',
+      '£                                       £',
+      '£     @@@   @@@     x x    =*=%=        £',
+      '£                  x x x                £',
+      '£                x x x x  x           -+£',
+      '£        z   z  x x x x x  x          ()£',
       '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
     ]
   ]
