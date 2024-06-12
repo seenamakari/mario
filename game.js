@@ -1,5 +1,6 @@
 //IMPORTANT: Make sure to use Kaboom version 0.5.0 for this game by adding the correct script tag in the HTML file.
 
+//Add a background
 
 kaboom({
   global: true,
@@ -17,14 +18,23 @@ const MOVE_SPEED = 300
 const JUMP_FORCE = 400
 const BIG_JUMP_FORCE = 1000
 let CURRENT_JUMP_FORCE = JUMP_FORCE
-const FALL_DEATH = 400
+const FALL_DEATH = 400 
 const ENEMY_SPEED = 40 
 
 
 // Game logic
 
 loadRoot('https://i.imgur.com/')
+loadSprite('Geralt', '' )
+loadSprite('Enemy', '' )
+loadSprite('Finish', '')
+loadSprite('Spike', '')
 loadSprite('coin', 'wbKxhcd.png')
+
+
+
+
+
 loadSprite('evil-shroom', 'KPO3fR9.png')
 loadSprite('brick', 'pogC9x5.png')
 loadSprite('block', 'M6rwarW.png')
